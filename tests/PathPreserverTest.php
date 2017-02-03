@@ -1,14 +1,14 @@
 <?php
 
-namespace derhasi\Composer\Tests;
+namespace deminy\Composer\Tests;
 
 use Composer\IO\IOInterface;
 use Composer\Util\Filesystem;
-use derhasi\Composer\PathPreserver;
+use deminy\Composer\PathPreserver;
 use derhasi\tempdirectory\TempDirectory;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 
-class PathPreserverTest extends TestCase
+class PathPreserverTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var IOInterface

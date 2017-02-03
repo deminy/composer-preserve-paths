@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Contains \derhasi\Composer\PathPreserver
+ * Contains \deminy\Composer\PathPreserver
  */
 
-namespace derhasi\Composer;
+namespace deminy\Composer;
 
 use Composer\Util\FileSystem;
 use Composer\IO\IOInterface;
@@ -58,11 +58,16 @@ class PathPreserver
     /**
      * Constructor.
      *
-     * @param string[] $installPaths  Array of install paths (must be absolute)
-     * @param string[] $preservePaths Array of preservable paths (must be absolute)
-     * @param string $cacheDir        Absolute path to composer cache dir.
-     * @param FileSystem $filesystem  The filesystem provided by composer to work with.
-     * @param IOInterface $io         IO interface for writing messages.
+     * @param string[] $installPaths
+     *   Array of install paths (must be absolute)
+     * @param string[] $preservePaths
+     *   Array of preservable paths (must be absolute)
+     * @param string $cacheDir
+     *   Absolute path to composer cache dir.
+     * @param \Composer\Util\FileSystem $filesystem
+     *   The filesystem provided by composer to work with.
+     * @param \Composer\IO\IOInterface $io
+     *   IO interface for writing messages.
      */
     public function __construct(
         array $installPaths,

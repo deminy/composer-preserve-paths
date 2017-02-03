@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains derhasi\Composer\Plugin.
+ * Contains deminy\Composer\Plugin.
  */
 
-namespace derhasi\Composer;
+namespace deminy\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
